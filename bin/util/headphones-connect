@@ -1,0 +1,4 @@
+#!/bin/bash
+DEVICE=38:18:4C:96:C7:82 
+bluetoothctl power on
+bluetoothctl connect $DEVICE

@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# Remove bt headphones and attempt to pair again
+# To connect, press Ctrl+c after the devices shows up in the discovery results
+#
+DEVICE=38:18:4C:96:C7:82 
+bluetoothctl power on
+bluetoothctl remove $DEVICE
+bluetoothctl scan on
+while :; do
+    bluetoothctl connect $DEVICE
+    sleep 1
+done
