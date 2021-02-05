@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# 
+#  Colorpicker that saves hex to clipboard
+#  Dependency: https://github.com/ym1234/colorpicker
+#
+
+v='[a-fA-F0-9]'
+
+# if the selection is a hex value of the correct length,
+# use that, otherwise select a pixel
+hex=$(xclip -clip p -o | tr -d '#:; ')
+
+[[ "$hex" =~ ^$v$v$v$v$v$v$ ]] ||
+    hex="$(colorpicker -doq)"
+
+hex=$(tr '[:upper:]' '[:lower:]' <<< "$hex" | tr -d '#\n')
+
+# copy the hex, then clear selection
+echo -n "$hex" | xclip -sel clip
+:| xclip -sel prim
+
+# send notification with the hex value and preview
+notify-send "$hex" "<span background='#$hex'>      </span>"
