@@ -1,3 +1,6 @@
+# Fix for dunst failing to start via systemd
+systemctl --user import-environment DISPLAY
+
 # Source colors from .Xresources for use in dwm
 xrdb .Xresources
 
