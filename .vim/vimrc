@@ -214,8 +214,8 @@ let g:highlightedyank_highlight_duration = 500
 
 """ highlight color codes in text
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
-let g:Hexokinase_highlighters = ['virtual']
-"let g:Hexokinase_highlighters = ['backgroundfull']
+"let g:Hexokinase_highlighters = ['virtual']
+let g:Hexokinase_highlighters = ['backgroundfull']
 
 """ manage colorschemes
 Plug 'lifepillar/vim-colortemplate'
