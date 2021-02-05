@@ -1,0 +1,5 @@
+--local is_never = true  -- no way to read the osc mode, so we assume it starts in auto mode.
+--mp.add_key_binding("n", "osc-cycle-never-auto", function()
+--    is_never = not is_never
+--    mp.command("script-message osc-visibility " .. (is_never and "auto" or "always"))
+--end)
