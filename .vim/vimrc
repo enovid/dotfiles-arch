@@ -213,7 +213,7 @@ Plug 'machakann/vim-highlightedyank'
 let g:highlightedyank_highlight_duration = 500
 
 """ highlight color codes in text
-Plug 'ap/vim-css-color'
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 """ manage colorschemes
 Plug 'lifepillar/vim-colortemplate'
