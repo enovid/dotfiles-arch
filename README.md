@@ -6,7 +6,7 @@ My dotfiles for [Arch Linux](https://en.wikipedia.org/wiki/Arch_Linux).
  kitty      > terminal emulator
  mpv        > media player
  nvim       > text editor
- dmenu       > application launcher
+ dmenu      > application launcher
  ranger     > file manager
  zathura    > document viewer
 ```
