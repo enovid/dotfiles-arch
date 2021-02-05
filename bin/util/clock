@@ -1,0 +1,2 @@
+#!/bin/sh
+date "+%Y %b %d (%a) $icon%I:%M%p"
