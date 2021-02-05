@@ -1,0 +1,4 @@
+
+[Default Applications]
+x-scheme-handler/webcal=google-chrome.desktop
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
