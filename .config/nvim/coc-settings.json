@@ -1,0 +1,26 @@
+{
+    "python.setInterpreter": "/home/enovid/.asdf/shims/python",
+    "python.jediEnabled": false,
+    "python.linting.enabled": false,
+    "python.sortImports.path": "isort",
+    "xml.java.home": "/usr/lib/jvm/java-13-openjdk",
+    "highlight.disableLanguages": [
+      "pandoc",
+      "vim",
+      "markdown",
+      ""
+    ],
+    "clangd.path": "/home/enovid/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd",
+    "java.home": "/usr/lib/jvm/java-11-openjdk/",
+    "java.configuration.runtimes": [
+      {
+        "name": "JavaSE-1.8",
+        "path": "/usr/lib/jvm/java-8-openjdk/",
+        "default": true
+      },
+      {
+        "name": "JavaSE-11",
+        "path": "/usr/lib/jvm/java-11-openjdk/",
+      },
+    ]
+}
