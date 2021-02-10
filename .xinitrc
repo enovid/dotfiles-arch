@@ -1,6 +1,9 @@
 # Fix for dunst failing to start via systemd
 systemctl --user import-environment DISPLAY
 
+# Disable display sleep
+xset s off -dpms
+
 # Source colors from .Xresources for use in dwm
 xrdb .Xresources
 
